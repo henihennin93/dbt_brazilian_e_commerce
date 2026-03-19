@@ -1,0 +1,13 @@
+brazilian_e_commerce:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: HYSIBNV-OY92696
+      user: HENGAMEHTEST
+      password: HAru@haru13722
+      role: ACCOUNTADMIN
+      database: BRAZILIAN_E_COMMERCE
+      warehouse: COMPUTE_WH
+      schema: CURATED_TABLES
+      threads: 1

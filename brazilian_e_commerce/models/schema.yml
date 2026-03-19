@@ -1,0 +1,28 @@
+version: 2
+
+models:
+  - name: agg_payment
+    description: Aggregate payments to a stable grain before joining into the fact table.
+    columns:
+      - name: order_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_orders')
+              field: order_id
+
+      - name: payment_id
+        tests:
+          - not_null
+          - unique
+
+  - name: agg_reviews
+    description: Aggregate reviews to order grain before joining into fact tables.
+    columns:
+      - name: order_id
+        tests:
+          - not_null
+          - unique
+          - relationships:
+              to: ref('stg_orders')
+              field: order_id
