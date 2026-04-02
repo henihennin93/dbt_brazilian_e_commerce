@@ -4,8 +4,8 @@ brazilian_e_commerce:
     dev:
       type: snowflake
       account: HYSIBNV-OY92696
-      user: HENGAMEHTEST
-      password: HAru@haru13722
+      user: 
+      password:
       role: ACCOUNTADMIN
       database: BRAZILIAN_E_COMMERCE
       warehouse: COMPUTE_WH
